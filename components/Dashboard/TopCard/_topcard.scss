@@ -1,0 +1,67 @@
+.status-box{
+  background-color: $white;
+  padding: 33px 26px 26px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  @include breakpoint(991px){
+      margin-bottom: 30px;
+  }
+}
+
+.status-box{
+  &.status-shipment{
+      .status-icon{background-color: rgba($color: #5243AA, $alpha: 0.05);}
+      .status-text{color: #5243AA;}
+  }
+  
+  &.status-order{
+      .status-icon{background-color: rgba($color: #00875A, $alpha: 0.05);}
+      .status-text{color: #00875A;}
+  }
+  
+  &.status-redemption{
+      .status-icon{background-color: rgba($color: #0052CC, $alpha: 0.05);}
+      .status-text{color: #0052CC;}
+  }
+  
+  &.status-sent{
+      .status-icon{background-color: rgba($color: #FF991F, $alpha: 0.05);}
+      .status-text{color: #FF991F;}
+  }
+}
+
+.status-box .status-icon{
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  img{
+      width: 24px;
+      height: 24px;
+  }
+}
+
+.status-box .status-text{
+  font-family: $dmsansFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5243AA;
+}
+
+.status-box .status-data{
+  font-family: $dmsansFont;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  color: #171717;
+}

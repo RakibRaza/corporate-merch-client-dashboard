@@ -1,0 +1,61 @@
+.settings__content{
+  background: $white;
+  box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+  border-radius: 8px;
+  min-height: 797px;
+  overflow: hidden;
+}
+
+.settings__content .nav.nav-tabs{
+  padding-left: 40px;
+  border-bottom: 1px solid #F5F5F5;
+  
+  li{
+      &:not(:first-child){
+          margin-left: 32px;
+      }
+  }
+  .nav-link{
+      border: 0;
+      padding: 28px 0;
+      font-family: $manropeFont;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #171717;
+      position: relative;
+      &::before{
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $themeColor;
+          border-radius: 15px 15px 0 0;
+          opacity: 0;
+      }
+      &.active{
+          color: $themeColor;
+          &::before{
+              opacity: 1;
+          }
+      }
+  }
+  
+  @include breakpoint(480px){
+      padding-left: 0;
+      padding: 0 20px;
+      margin-left: -20px;
+      li{
+          &:first-child,
+          &:not(:first-child){
+              margin-left: 20px;
+          }
+      }
+      .nav-link{
+          padding: 20px 0;
+      }
+  }
+}

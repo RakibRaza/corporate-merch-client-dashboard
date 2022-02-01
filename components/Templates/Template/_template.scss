@@ -1,0 +1,12 @@
+.template__item{
+  overflow: hidden;
+  margin-bottom: 30px;
+  filter: drop-shadow(0px 23px 44px rgba(176, 183, 195, 0.14));
+  border-radius: 8px;
+  .template__img{
+     width: 100%;
+     img{
+         width: 100%;
+     }
+  }
+}

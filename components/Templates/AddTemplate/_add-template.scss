@@ -1,0 +1,209 @@
+.template-top__area.section__header__area{
+  padding-top: 30px;
+  .section__top__left,
+  .section__top__right{
+      padding-bottom: 30px;
+  }
+  @include breakpoint(767px){
+      margin-top: 20px;
+  }
+}
+
+.template-top__header{
+  h2{
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      color: #B6B4BA;
+      padding-bottom: 2px;
+      border-bottom: 1px dashed #B6B4BA;
+      @include breakpoint(480px){
+          font-size: 24px;
+      }
+  }
+}
+
+.template-add__info{
+  padding-top: 20px;
+  .input__group{
+      select{
+          font-family: $manropeFont;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: $titleColor;
+      }
+  }
+}
+
+.template-add__top{
+  h2{
+      margin-bottom: 25px;
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $titleColor;
+  }
+  .edit-backpart,
+  .edit-frontpart{
+      border-radius: 16px;
+      background-image: url('/images/bg/bg-card.png');
+      background-position: center;
+      background-size: cover;
+      padding: 30px;
+      height: 261px;
+      margin: 0;
+  }
+  
+  .edit-backpart__top{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      input[type='file']{
+          display: none;
+      }
+      label{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .label-img{
+          margin-bottom: 14px;
+          width: 82px;
+          height: 82px;
+          background-color: rgba(85, 66, 246, 0.1);
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+              width: 36px;
+              height: 36px;
+          }
+      }
+      
+      .label-text{
+          font-family: $manropeFont;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #5542F6;
+      }
+  }
+  
+  .edit-frontpart__top{
+      margin-top: 0px;
+      input{
+          width: 100%;
+          margin-bottom: 31px;
+          padding: 8px 0;
+          border: 2px dashed #8F92A1;
+          background-color: transparent;
+          text-align: center;
+          font-family: $manropeFont;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 40px;
+          color: #808191;
+      }
+      p{
+          font-family: $merindaoneFont;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #272525;
+      }
+  }
+}
+
+.template-add__info{
+  .ck.ck-toolbar.ck-toolbar_grouping{
+      padding: 3px 16px;
+  }
+  .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred,
+  .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused {
+      height: 148px;
+  }
+}
+
+.template-add__upload{
+  margin-top: 32px;
+  padding: 42px 100px;
+  background: rgba(143, 146, 161, 0.05);
+  border: 2px dashed #8F92A1;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(991px){
+      padding: 40px;
+  }
+  .upload-icon{
+      flex: 0 0 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background: rgba($color: #8F92A1, $alpha: 0.05);
+      border-radius: 50%;
+  }
+  .upload-link{
+      margin-left: 30px;
+      font-family: $dmsansFont;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.4px;
+      color: #8F92A1;
+  }
+  label{
+      cursor: pointer;
+      color: #0052CC;
+  }
+  input{
+      display: none;
+  }
+}
+
+.template-add__buttons{
+  padding: 24px 0 44px 0;
+  ul{
+      margin-left: -15px;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+          margin-top: 20px;
+          margin-left: 15px;
+      }
+      @include breakpoint(767px){
+          justify-content: center;
+      }
+  }
+  
+  a{
+      background-color: $white;
+      border: 1px solid $borderColor;
+      box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+      border-radius: 4px;
+      padding: 11px 24px;
+      display: block;
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+      transition: 0.3s;
+      span{
+          margin-left: 8px;
+      }
+      &:hover{
+          background-color: rgb(216, 217, 221);
+      }
+  }
+}

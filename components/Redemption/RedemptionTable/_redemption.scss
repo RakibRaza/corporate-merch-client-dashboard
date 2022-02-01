@@ -1,0 +1,123 @@
+.redemption-area__content{
+  background: $white;
+  box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 764px;
+}
+
+.redemption__table{
+  overflow-x: auto;
+}
+
+.redemption__table table{
+  width: 100%;
+  thead th{
+      padding: 8px 16px;
+      font-family: $dmsansFont;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #171717;
+  }
+  
+  tbody td{
+      //white-space: nowrap;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $titleBlackColor;
+      padding: 18px 16px;
+      border-bottom: 1px solid $borderColor;
+  }
+  
+  thead th,
+  tbody td{
+      &:nth-child(1){
+          padding-left: 35px;
+          min-width: 280px;
+      }
+      &:nth-child(2){min-width: 100px;}
+      &:nth-child(3){min-width: 150px;}
+      &:nth-child(4){min-width: 150px;}
+      &:nth-child(5){min-width: 400px;}
+  }
+}
+
+.redemption__table table{
+  .product-title{
+      padding-left: 0;
+      img{
+          width: 38px;
+          height: 34px;
+      }
+  }
+  .created-date,
+  .closing-date{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+  }
+}
+
+.redemption__table .action-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  a{
+      &:not(:first-child){
+          margin-left: 8px;
+      }
+  }
+  .action-item{
+      margin: 0 4px;
+      padding: 6px 18px;
+      border-radius: 32px;
+      background: #E7F9ED;
+      border: 1px solid #2DB45F;
+      display: flex;
+      align-items: center;
+      i{
+          color: #2DB45F;
+      }
+      span{
+          margin-left: 6px;
+          font-family: $manropeFont;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 24px;
+          color: #2DB45F;
+      }
+  }
+  .edit,
+  .delete{
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .edit{
+      background: #E5F3FB;
+      border: 1px solid $themeColor;
+      svg{
+          color: $themeColor;
+      }
+  }
+  .delete{
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background: #FFE9E0;
+      border: 1px solid #FF6628;
+      svg{
+          color: #FF6628;;
+      }
+  }
+}

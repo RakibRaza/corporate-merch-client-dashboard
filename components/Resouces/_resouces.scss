@@ -1,0 +1,96 @@
+.resouses__content .accordion{
+  .accordion-item{
+      margin-bottom: 30px;
+      background: $white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      border: 0;
+  }
+  .accordion-button{
+      border: 0;
+      padding: 17px 16px 18px 52px;
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $titleColor;
+      position: relative;
+      &::before{
+          position: absolute;
+          content: "";
+          top: 17px;
+          right: 16px;
+          width: 24px;
+          height: 24px;
+          background-image: url('/images/icons/more_horiz.svg');
+      }
+      &::after{
+          position: absolute;
+          top: 17px;
+          left: 16px;
+      }
+      
+      span{
+          margin-left: 5px;
+          font-size: 14px;
+          line-height: 20px;
+          color: #84818A;
+      }
+      &:not(.collapsed){
+          color: $titleColor;
+          background-color: $white;
+          box-shadow: none;
+      }
+      &:focus{
+          border-color: transparent;
+          outline: 0;
+          box-shadow: none;
+      }
+  }
+  
+  .accordion-body{
+      padding: 0;
+      border: 0;
+  }
+  
+  .accordion-body .accordion-item{
+      margin-bottom: 0;
+      box-shadow: none;
+      border-radius: 0;
+      border: 0;
+      
+      .accordion-header{
+          border-top: 1px solid $borderColor;
+      }
+      .accordion-button{
+          padding: 12px 24px 16px 52px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          &::before{
+              display: none;
+          }
+          &::after{
+              position: unset;
+          }
+      }
+      .accordion-body{
+          border-top: 1px solid $borderColor;
+          padding: 12px 24px 16px 52px;
+          p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              color: $titleColor;
+          }
+      }
+  }
+}
+
+.resouses__accordion__button{
+  padding: 14px;
+  background-color: rgba($color: #B6B4BA, $alpha: 0.1);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  border-top: 1px solid $borderColor;
+}

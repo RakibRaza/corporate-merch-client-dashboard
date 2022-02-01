@@ -1,0 +1,175 @@
+.account__sidebar{
+  margin-left: -15px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  img{
+      width: 100%;
+      height: 100%;
+  }
+  .brand-img{
+      position: absolute;
+      top: 277px;
+      right: 50%;
+      transform: translateX(50%);
+  }
+  @include breakpoint(1199px){
+      display: none;
+  }
+}
+
+.account__content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__body{
+      width: 457px;
+      padding: 30px 36px;
+      @include breakpoint(1199px){
+          width: 50%;
+      }
+      @include breakpoint(991px){
+          width: 70%;
+      }
+      @include breakpoint(767px){
+          width: 100%;
+      }
+      @include breakpoint(480px){
+          padding: 20px;
+      }
+  }
+}
+
+.account__content__top{
+  margin-bottom: 36px;
+  h2{
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      color: $titleColor;
+      margin-bottom: 12px;
+      @include breakpoint(480px){
+          font-size: 28px;
+          line-height: 30px;
+      }
+  }
+  p{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+  }
+}
+
+.input-link{
+  font-family: $manropeFont;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: $themeColor;
+}
+
+.account__input{
+  position: relative;
+  #password-visibility{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+  }
+  input{
+      width: 100%;
+      padding-top: 20px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid $borderColor;
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+      &:focus{
+          border-bottom: 1px solid $themeColor;
+      }
+  }
+}
+
+.input__animation{
+  width: 100%;
+  height: 48px;
+  position: relative;
+  input{
+      width: 100%;
+      height: 48px;
+      &::placeholder{
+          color: transparent;
+      }
+  }
+  
+  label{
+      pointer-events: none;
+      position: absolute;
+      bottom: 14px;
+      left: 0;
+      transition: 0.3s;
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $textColor;
+  }
+  &.focused {
+      label {
+          bottom: 29px;
+          font-size: 12px;
+          line-height: 18px;
+      }
+  }
+ 
+}
+
+.account__input__between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .account__input{
+      flex-basis: 48%;
+  }
+  @include breakpoint(480px){
+      flex-direction: column;
+      .account__input{
+          width: 100%;
+          &:not(:first-child){
+              margin-top: 20px;
+          }
+      }
+  }
+}
+
+.account__input__terms{
+  display: flex;
+  align-items: flex-start;
+  input{
+      width: 24px;
+      height: 24px;
+  }
+  label{
+      margin-left: 12px;
+      padding: 0;
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: $textColor;
+      a{
+          font-weight: 600;
+          color: $themeColor;
+      }
+  }
+}

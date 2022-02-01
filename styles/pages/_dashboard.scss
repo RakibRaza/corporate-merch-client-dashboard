@@ -1,0 +1,186 @@
+
+
+.content__box{
+  background-color: $white;
+  box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+  border-radius: 8px;
+  
+  @include breakpoint(991px){
+      margin-bottom: 30px;
+  }
+  
+  &__top{
+      padding: 26px 26px 21px;
+      border-bottom: 1px solid $borderColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  &__body{
+      padding: 30px 26px;
+  }
+}
+
+.content__box__top__left h3{
+  font-family: $dmsansFont;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8F92A1;
+}
+
+.content__box__top__left h2{
+  margin-top: 12px;
+  font-family: $dmsansFont;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  color: #171717;
+}
+
+.content__box__top__right{
+  .input-group{
+      background: rgba(143, 146, 161, 0.05);
+      border-radius: 16px;
+      padding: 8px 12px;
+      label{
+          margin-right: 8px;
+          font-size: $dmsansFont;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          color: #8F92A1;
+      }
+      select{
+          border: 0;
+          background-color: transparent;
+          font-family: $dmsansFont;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          color: #171717;
+      }
+  }
+}
+
+.badge-total{
+  padding: 2px 8px;
+  background: rgba(143, 146, 161, 0.2);
+  border-radius: 8px;
+  font-family: $dmsansFont;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #8F92A1;
+}
+
+.content__box__body #client-shipment-chart{
+  margin-top: 0px;
+}
+
+.content__box__body #shipment-weekly-chart{
+  margin-top: -28px;
+}
+
+.shipment-weekly-chart__legend{
+  margin-top: -36px;
+  padding: 26px 34px 25px 24px;
+  border-top: 1px solid $borderColor;
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  ul{
+      display: flex;
+  }
+  li{
+      &:not(:first-child){
+          margin-left: 10px;
+      }
+  }
+  
+  .legend__title{
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+      padding-left: 18px;
+      position: relative;
+      &::before{
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+      }
+  }
+}
+
+.content__box{
+  .shipment-chart__legend{
+      margin-top: 27px;
+  }
+}
+
+.content__box .shipment__legend{
+  display: flex;
+  flex-direction: column;
+  
+  li{
+      &:not(:first-child){
+          margin-top: 16px;
+      }
+  }
+  &__item{
+      display: flex;
+      justify-content: space-between;
+  }
+  .legend__title{
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+      padding-left: 19px;
+      position: relative;
+      &::before{
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 9px;
+          height: 9px;
+          border-radius: 2px;
+      }
+  }
+  .legend__data{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $textColor;
+      margin-bottom: 0;
+  }
+}
+
+.legend__title{
+  &.sent::before{background-color: #0052CC;}
+  &.skipped::before{background-color: #20C9AC;}
+  &.pending::before{background-color: #FF991F;}
+  &.processing::before{background-color: #FA699D;}
+  &.on-cart::before{background-color: #EBEAED;}
+}

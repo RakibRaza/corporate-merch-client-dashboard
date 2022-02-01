@@ -1,0 +1,91 @@
+.team__item{
+  padding: 30px;
+  background: $white;
+  box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  @include breakpoint(480px){
+      padding: 20px;
+  }
+}
+
+.team__item__top{
+  display: flex;
+  padding-bottom: 25px;
+  &__left{
+      margin-right: 30px;
+      @include breakpoint(480px){
+          margin-right: 20px;
+      }
+  }
+  &__right{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .overlay{
+      flex: 0 0 24px;
+  }
+}
+
+.team__item__top__text{
+  h2{
+      margin-bottom: 10px;
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      color: $titleColor;
+      @include breakpoint(991px){
+          font-size: 24px;
+          line-height: 30px;
+      }
+  }
+  h3{
+      width: fit-content;
+      padding: 4px 12px;
+      background: rgba(85, 66, 246, 0.1);
+      border-radius: 4px;
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #5542F6;
+  }
+}
+
+.team__item__img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.team__item__bottom{
+  border-top: 1px solid $borderColor;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left{
+      flex-basis: 48%;
+      h2{
+          font-family: $manropeFont;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #ABABAB;
+          .current-user{
+              margin-right: 8px;
+              font-weight: 700;
+              text-decoration-line: underline;
+              color: $themeColor;
+          }
+      }
+  }
+  &__right{
+      flex-basis: 48%;
+      a{
+          width: 100%;
+      }
+  }
+}

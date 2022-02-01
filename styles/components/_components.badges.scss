@@ -1,0 +1,43 @@
+.badge{
+    padding: 2px 8px 4px;
+    border-radius: 4px;
+    font-family: $manropeFont;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    
+    &.bg-purple{
+        background: rgba($color: #5542f6, $alpha: 0.10);
+        color: #5542f6;
+    }
+
+    &.bg-yellow{
+        background: rgba($color: #ffa043, $alpha: 0.10);
+        color: #ffa043;
+    }
+
+    &.bg-green{
+        background: rgba($color: #20c9ac, $alpha: 0.10);
+        color: #20c9ac;
+    }
+
+    &.bg-black{
+        background: rgba($color: #84818a, $alpha: 0.10);
+        color: #84818a;
+    }
+
+    &.bg-blue{
+        background: rgba($color: #00A5FF, $alpha: 0.10);
+        color: #00A5FF;
+    }
+
+    &.bg-gray{
+        background: rgba($color: $gray, $alpha: 0.10);
+        color: $gray;
+    }
+
+    &.bg-red{
+        background: rgba($color: #fc3400, $alpha: 0.10);
+        color: #fc3400;
+    }
+}

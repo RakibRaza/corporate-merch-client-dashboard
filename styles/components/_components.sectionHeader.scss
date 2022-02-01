@@ -1,0 +1,135 @@
+.section__header{
+    //padding: 34px 0 30px;
+    padding-top: 34px;
+}
+
+.section__header__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 34px;
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 26px;
+    @include breakpoint(767px){
+        flex-direction: column;
+        &__right{
+            margin-top: 20px;
+        }
+    }
+}
+
+.content__left__item{
+    display: flex;
+    flex-wrap: wrap;
+    .product-img{
+        margin-right: 20px;
+        background: $white;
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+    }
+    
+    .product-name h2{
+        font-family: $manropeFont;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: $titleColor;
+        @include breakpoint(767px){
+            font-size: 24px;
+        }
+    }
+}
+
+.section__header__content__right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .content__pagination{
+        display: flex;
+        li{
+            &:first-child{
+                margin-right: 20px;
+            }
+        }
+    }
+    .content__right__item{
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+        &:last-child{
+            margin-left: 20px;
+        }
+    }
+}
+
+.section__top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__left{
+        padding-bottom: 30px;
+    }
+    
+    &__right{
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            &:not(:first-child){
+                margin-left: 14px;
+            }
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//section header area style
+.section__header__area{
+    padding-top: 20px;
+    .section__top__left,
+    .section__top__right{
+        padding-bottom: 20px;
+    }
+}
+
+@include breakpoint(991px){
+    .section__top{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@include breakpoint(767px){
+    .section__top__left{
+        padding-bottom: 10px;
+    }
+    
+    .section__top__right{
+        justify-content: center;
+        &__item{
+            margin-top: 20px;
+        }
+    }
+
+    .section__header__area{
+        padding-top: 40px;
+        .section__top__left,
+        .section__top__right{
+            padding-bottom: 20px;
+        }
+    }
+}

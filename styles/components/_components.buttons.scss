@@ -1,0 +1,273 @@
+.btn{
+    padding: 11px 16px;
+    border-radius: 4px;
+    border: 0;
+    font-family: $manropeFont;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fbfafc;
+    background-color: $themeColor;
+    width: fit-content;
+    transition: 0.3s;
+    
+    &:hover{
+        color: #FBFAFC;;
+    }
+    
+    span{
+        margin-left: 8px;
+    }
+    
+    &.btn-theme{
+        background-color: $themeColor;
+        color: $white;
+        &:hover{
+            color: $white;
+            background-color: #2d7ea7;
+        }
+    }
+    
+    &.btn-outline-theme{
+        border: 2px solid $themeColor;
+        background-color: transparent;
+        color: $themeColor;
+        &:hover{
+            border-color: $themeColor;
+            background-color: $themeColor;
+            color: $white;
+            i{
+                color: $white;
+            }
+        }
+    }
+    
+    &.btn-outline{
+        border: 1px solid #939292;
+        background-color: transparent;
+        color: #808191;
+        &:hover{
+            border-color: $themeColor;
+            background-color: $themeColor;
+            color: $white;
+            i{
+                color: $white;
+            }
+        }
+    }
+    
+    &.btn-no-outline{
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: #808191;
+    }
+    
+    &.btn-add{
+        transition: 0.3s;
+        &:hover{
+            color: #fbfafc;
+            background-color: $titleBlueColor;
+        }
+    }
+    
+    &.btn-cart{
+        background: #939292;
+        transition: 0.3s;
+        &:hover{
+            background: $themeColor;
+            color: $white;
+        }
+    }
+    
+    &.btn-preview{
+        background-color: #504F54;
+        transition: 0.3s;
+        &:hover{
+            color: #fbfafc;
+            background-color: #504F54;
+        }
+    }
+    
+    &.btn-white{
+        padding: 11px 16px;
+        background-color: $white;
+        filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
+        color: $textColor;
+        transition: 0.3s;
+        select{
+            border: 0;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: $titleColor;
+        }
+        input{
+            border: 0;
+        }
+    }
+    
+    &.btn-black{
+        background-color: $black;
+        color: $white;
+        &:hover{
+            background-color: $themeColor;
+            color: $white;
+        }
+    }
+    
+    &.btn-link{
+        background: $white;
+        border: 1px solid $borderColor;
+        border-radius: 4px;
+        &:hover{
+            background-color: $white;
+        }
+    }
+    
+    &.btn-rounded{
+        padding: 8px 15px;
+        border: 1px solid #E7E7E7;
+        box-sizing: border-box;
+        border-radius: 32px;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: $themeColor;
+        transition: 0.3s;
+        &:hover{
+            background-color: $white;
+            filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
+        }
+    }
+    
+    &.btn-dashed{
+        width: 100%;
+        padding: 11px 24px;
+        border: 1px dashed $themeColor;
+        background-color: $white;
+        color: $themeColor;
+        &:hover{
+            background-color: $themeColor;
+            color: $white;
+        }
+    }
+    
+    &.btn-sync{
+        background-color: #27B05A;
+        transition: 0.3s;
+        &:hover{
+            background-color: rgb(8, 61, 27);
+        }
+    }
+    
+    &.btn-trash{
+        background: rgba(252, 52, 0, 0.1);
+        color: red;
+    }
+    
+    &.border-theme{
+        border: 1px solid #5542F6;
+    }
+    
+    &.btn-approve{
+        background-color: #2DB45F;
+        transition: 0.3s;
+        &:hover{
+            background-color: #248f4b;
+        }
+    }
+    
+    &.btn-request{
+        background-color: #FE7F75;
+        transition: 0.3s;
+        &:hover{
+            background-color: #cf5a52;
+        }
+    }
+}
+
+.bg-item{
+    padding: 11px 20px;
+    background-color: $white;
+    border-radius: 4px;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
+    color: $textColor;
+    transition: 0.3s;
+    position: relative;
+    select{
+        border: 0;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $titleColor;
+    }
+    input{
+        width: 100%;
+        border: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $textColor;
+    }
+    .btn-search-overlay{
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+}
+
+.text-link{
+    padding: 11px 16px;
+    border-radius: 4px;
+    border: 0;
+    font-family: $manropeFont;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: $themeColor;
+    background-color: transparent;
+    width: fit-content;
+    transition: 0.3s;
+    span{
+        margin-left: 8px;
+    }
+}
+
+.text-theme{
+    transition: 0.3s;
+    span{
+        font-family: $manropeFont;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        color: $themeColor;
+    }
+    &:hover{
+        color: #2d7ea7;
+    }
+}
+
+.rounded-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #DADADA;
+    color: $themeColor;
+    transition: 0.3s;
+    &:hover{
+        background-color: $themeColor;
+        color: $white;
+    }
+}

@@ -1,0 +1,9 @@
+.client-manage-order{
+  .section__top__right__item input[type='search']{
+      width: 310px;
+      @include breakpoint(480px){
+          width: fit-content;
+      }
+  }
+}
+

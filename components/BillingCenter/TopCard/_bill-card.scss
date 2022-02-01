@@ -1,0 +1,202 @@
+.billing-center__status .status__card{
+  .status-title{
+      font-family: $dmsansFont;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #808191;
+  }
+  .status-data{
+      span{
+          font-family: $dmsansFont;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: $textColor;
+      }
+      .status-data-theme{
+          font-family: $dmsansFont;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #5AC0F4;
+      }
+  }
+  .status-text.status-text-down .status-icon-bg{
+      background: rgba(255, 44, 44, 0.2);
+  }
+  .status-text.status-text-down .text-down{
+      color: #FF2C2C;
+  }
+}
+
+
+.status__card{
+    background: $white;
+    box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+    border-radius: 8px;
+    padding: 22px 18px 25px 23px;
+    
+    @include breakpoint(1399px){
+        padding: 20px 18px;
+    }
+
+    @include breakpoint(991px){
+        margin-bottom: 30px;
+    }
+    
+    &__title{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    &__content{
+        padding-left: 29px;
+    }
+}
+
+.edit-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.status__card__title{
+    .status-title{
+        margin-left: 8px;
+        font-family: $dmsansFont;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $themeColor;
+    }
+    
+    .status-title-icon{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba($color: #0AABFA, $alpha: 0.2);
+        mix-blend-mode: normal;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 10px;
+            height: 10px;
+        }
+    }
+    
+    &--color1{
+        .status-title{color: #0AABFA;}
+        .status-title-icon{background-color: rgba($color: #0AABFA, $alpha: 0.1);}
+    }
+    
+    &--color2{
+        .status-title{color: #1BB598;}
+        .status-title-icon{background-color: rgba($color: #1BB598, $alpha: 0.1);}
+    }
+    
+    &--color3{
+        .status-title{color: #FE7F75;}
+        .status-title-icon{background-color: rgba($color: #FE7F75, $alpha: 0.1);}
+    }
+    
+    &--color4{
+        .status-title{color: #4FBF67;}
+        .status-title-icon{background-color: rgba($color: #4FBF67, $alpha: 0.1);}
+    }
+
+    &--color5{
+        .status-title{color: #FFA043;}
+        .status-title-icon{background-color: rgba($color: #FFA043, $alpha: 0.1);}
+    }
+    
+    &--purple{
+        .status-title{color: #5243AA;}
+        .status-title-icon{background-color: rgba($color: #5243AA, $alpha: 0.1);}
+    }
+    
+    &--red{
+        .status-title{color: #FF7C50;}
+        .status-title-icon{background-color: rgba($color: #FF7C50, $alpha: 0.1);}
+    }
+    
+    &--green{
+        .status-title{color: #1DBF73;}
+        .status-title-icon{background-color: rgba($color: #1DBF73, $alpha: 0.1);}
+    }
+    
+    &--yellow{
+        .status-title{color: #FFB906;}
+        .status-title-icon{background-color: rgba($color: #FFB906, $alpha: 0.1);}
+    }
+}
+
+.status-data{
+    margin-bottom: 5px;
+    font-family: $dmsansFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.4px;
+    color: $titleColor;
+}
+
+.status-text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+        font-family: $manropeFont;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $textColor;
+        
+        &:nth-child(1){
+            margin-right: 5px;
+        }
+        &:nth-child(2){
+            margin-right: 8px;
+            font-weight: 600;
+            color: #4FBF67;
+        }
+    }
+}
+
+.status-icon-bg{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(79, 191, 103, 0.2);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 8px;
+        height: 8px;
+    }
+}
+
+
+
+.status-icon{
+    display: block;
+    width: 17px;
+    height: 17px;
+    img{
+        width: 17px;
+        height: 17px;
+        vertical-align: middle;
+    }
+}
+

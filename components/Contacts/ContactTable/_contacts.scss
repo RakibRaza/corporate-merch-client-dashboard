@@ -1,0 +1,149 @@
+.contact-area__content{
+  background: $white;
+  box-shadow: 0px 23px 44px rgba(176, 183, 195, 0.14);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact__table{
+  overflow-x: auto;
+}
+
+.contact__table table{
+  width: 100%;
+  thead th{
+      padding: 8px 16px;
+      font-family: $dmsansFont;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #171717;
+  }
+  
+  tbody td{
+      //white-space: nowrap;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $titleBlackColor;
+      padding: 18px 16px;
+      border-bottom: 1px solid $borderColor;
+  }
+  
+  thead th,
+  tbody td{
+      &:nth-child(1){
+          padding-left: 35px;
+          min-width: 200px;
+      }
+      &:nth-child(2){min-width: 80px;}
+      &:nth-child(3){min-width: 100px;}
+      &:nth-child(4){min-width: 180px;}
+      &:nth-child(5){min-width: 95px;}
+      &:nth-child(6){min-width: 150px;}
+      &:nth-child(7){min-width: 150px;}
+  }
+}
+
+.contact__table table{
+  .company-name,
+  .dept-name,
+  .address,
+  .phone,
+  .birthday{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+  }
+  .phone i{
+      font-size: 14px;
+      color: $textColor;
+      margin-right: 4px;
+  }
+  .country-name{
+      font-family: $manropeFont;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+  }
+}
+
+.dept-name{
+  padding-left: 15px;
+  position:relative;
+  &::before{
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+  }
+  &.marketing::before{background-color: #00A5FF;}
+  &.sales::before{background-color: #FF6628;}
+  &.accounting::before{background-color: #FE778C;}
+}
+
+//contact pagination style
+.contact__pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &__left,
+  &__right{
+      margin-top: 28px;
+  }
+}
+
+.contact__pagination__left{
+  h2{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: $textColor;
+  }
+}
+
+.contact__pagination__list{
+  display: flex;
+  flex-wrap: wrap;
+  li{
+      &:not(:first-child),
+      &:not(:last-child){
+          margin: 0 4px;
+      }
+      &:first-child{
+          margin-right: 16px;
+      }
+      &:last-child{
+          margin-left: 16px;
+      }
+  }
+  li a{
+      padding: 2px 9px 4px;
+      border-radius: 4px;
+      background-color: transparent;
+      display: block;
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: $textColor;
+      &:hover,
+      &.active{
+          color: $themeColor;
+          background-color: rgba(85, 180, 228, 0.1);
+      }
+  }
+}

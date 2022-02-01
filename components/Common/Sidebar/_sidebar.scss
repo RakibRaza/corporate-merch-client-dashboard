@@ -1,0 +1,150 @@
+.sidebar{
+  &__area{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 270px;
+      height: 100%;
+      background-color: $bgSidebarColor;
+      transition: 0.4s;
+      overflow: hidden;
+      
+      @include breakpoint(1199px){
+          z-index: 999;
+          transition: 0.5s;
+          transform: translateX(-100%);
+      }
+  }
+  
+  &__brand{
+      display: flex;
+      justify-content: center;
+      padding: 17px 0 14px 0;
+  }
+  
+  &__close{
+      position: absolute;
+      top: 30px;
+      right: 25px;
+      border: 0;
+      background-color: $white;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 20px;
+      color: $themeColor;
+      display: none;
+      &:hover{
+          color: $themeColor;
+      }
+      @include breakpoint(1199px){
+          display: block;
+      }
+  }
+  
+  &__menu{
+      margin-top: 30px;
+      padding: 0 20px;
+      height: calc(100vh - 150px);
+      overflow-y: auto;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      scrollbar-width: none; 
+      &::-webkit-scrollbar { 
+          display: none;  /* Safari and Chrome */
+      }
+  }
+}
+
+.sidebar__area--bg{
+  background-color: #111111;
+  .sidebar__menu{
+      li a.active, 
+      li a:hover{
+          background-color: #292929;
+      }
+      .dropdown.has-clicked{
+          background-color: #292929;
+      }
+  }
+  
+  
+}
+
+.sidebar__area.show-sidebar{
+  width: 270px;
+  transform: translateX(0%);
+}
+
+.sidebar__menu{
+  display: flex;
+  flex-direction: column;
+  li{
+      &:not(:first-child){
+          margin-top: 5px;
+      }
+  }
+  li a{
+      display: block;
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-family: $interFont;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $titleLightColor;
+      transition: 0.3s;
+      img{
+          margin-right: 16px;
+      }
+      .menu-title {
+          color: $titleLightColor;
+      }
+      
+      &.active,
+      &:hover{
+          background-color: #18193f;
+          color: $themeColor;
+          img{
+              filter: invert(1);
+              filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+          }
+          .menu-title {
+              color: $themeColor;
+          }
+      }
+  }
+  
+  
+  .menu-arrow .toggle-icon{
+      position: absolute;
+      top: 20px;
+      right: 12px;
+      
+  }
+  
+  .dropdown.has-clicked{
+      border-radius: 16px;
+      background-color: #18193f;
+      .menu-title {
+          color: $themeColor;
+      }
+      .menu-icon {
+          img {
+              filter: invert(1);
+              filter: invert(1) sepia(1) saturate(5) hue-rotate( 175deg);
+          }
+          
+      }
+      .toggle-icon {
+          color: $themeColor;
+      }
+  }
+}
+
+.sub-menu{
+  transition: 0.3s;
+  
+   a svg{
+      font-size: 7px;
+      margin: auto 23px auto 10px;
+  }
+}

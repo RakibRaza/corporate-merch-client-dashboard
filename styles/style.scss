@@ -1,0 +1,101 @@
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/
+@import 'settings/settings.colors'; 
+@import 'settings/settings.typography'; 
+@import 'settings/settings.breakpoints';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import 'helper/reset.all'; 
+@import 'helper/helper.theme';
+
+/*--------------------------------
+03. Sections style
+--------------------------------*/
+// loader
+@import "../components/Common/Loader/loader";
+//sidebar section
+@import "../components/Common/Sidebar/sidebar";
+
+//header section
+@import "../components/Common/Header/header";
+
+//account section
+@import "../components/Account/account";
+
+//client dashboard section
+@import "../components/Dashboard/TopCard/topcard";
+@import "pages/dashboard";
+
+//cart sidebar section
+@import "../components/MyProducts/TopSection/cart";
+
+//my product section
+@import "../components/MyProducts/Products/products";
+
+//send items section
+@import "../components/MyProducts/SendItem/send-item";
+
+//Redemption section
+@import "../components/Redemption/RedemptionTable/redemption";
+
+//Redemption New Giveway section
+@import "../components/Redemption/GiveawayLink/giveaway-link";
+
+//Contacts section
+@import "../components/Contacts/ContactTable/contacts";
+
+//Client Manage order section
+@import "../components/ManageOrder/OrderTop/order-top";
+@import "../components/ManageOrder/Products/products";
+
+//Client Order Details section
+@import "../components/ManageOrder/OrderDetails/order-details";
+
+//Client shipments section
+@import "../components/Shipments/ShipmentTable/shipment";
+
+//Teams section
+@import "../components/Teams/Team/team";
+
+//User management section
+@import "../components/Teams/UserManagement/user-manage";
+@import "../components/Teams/AddUser/add-user";
+
+//Shopify section
+@import "../components/Shopify/ShopifyTable/shopify";
+
+//team billing center section
+@import "../components/BillingCenter/TopCard/bill-card";
+@import "../components/BillingCenter/BillTable/bill-table";
+
+//Carbon Offset section
+@import "../components/CarbonOffsets/CarbonTable/carbon";
+
+//settings section
+@import "pages/setting";
+@import "../components/Settings/Password/password";
+
+//Templates section
+@import "../components/Templates/Template/template";
+@import "../components/Templates/AddTemplate/add-template";
+
+//Resouses section
+@import '../components/Resouces/resouces';
+
+/*--------------------------------
+04. Components style
+--------------------------------*/
+@import 'components/components.breadcrumb';
+@import 'components/components.sectionHeader';
+@import 'components/components.badges';
+@import 'components/components.buttons';
+@import 'components/components.cards';
+
+/*--------------------------------
+05. Utilities style
+--------------------------------*/
+@import 'utilities/utilites';

@@ -1,0 +1,342 @@
+.send-item__breadcrumb{
+  .breadcrumb-item{
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #B6B4BA;
+      &.active{
+          color: $titleColor;
+      }
+  }
+}
+
+.send-item__product__name h2{
+  margin-top: 6px;
+  font-family: $manropeFont;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: $titleColor;
+}
+
+.send-item__address{
+  background-color: $white;
+  padding: 32px 0px 36px 0px;
+  border-radius: 4px;
+  box-shadow: 0px 23px 44px #B0B7C324;
+  .nav{
+      padding: 0px 41px 30px;
+      border-bottom: 1px solid $borderColor;
+  }
+  .nav-link{
+      padding: 17px 25px;
+      border-radius: 32px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 16px;
+      color: #969AA4;
+      &.active{
+          background-color: $themeColor;
+          color: $white;
+      }
+      @include breakpoint(480px){
+          padding: 15px 20px;
+          font-size: 16px;
+      }
+  }
+}
+
+//single address style
+.single__address__top{
+  padding: 26px 35px 31px 41px;
+  border-bottom: 1px solid $borderColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @include breakpoint(480px){
+      padding: 20px;
+  }
+  label{
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $titleColor;
+      white-space: nowrap;
+      margin-right: 10px;
+  }
+  select{
+      width: 100%;
+      padding: 14px;
+      background: $white;
+      border: 1px solid #F4F4F4;
+      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12));
+      border-radius: 4px;
+  }
+}
+
+.single__address__top__left{
+  flex-basis: 75%;
+  display: flex;
+  align-items: center;
+  @include breakpoint(991px){
+      flex-basis: 70%;
+  }
+  @include breakpoint(575px){
+      flex-basis: 100%;
+      margin-bottom: 20px;
+  }
+  @include breakpoint(480px){
+      flex-direction: column;
+      align-items: flex-start;
+      label{
+          margin-bottom: 10px;
+      }
+  }
+}
+
+.single__address__top__right{
+  flex-basis: auto;
+}
+
+.single__address__body,
+.multiple__address__body{
+  padding: 24px 35px 36px 41px;
+  @include breakpoint(480px){
+      padding: 20px;
+  }
+}
+
+.single__address__body__top{
+  margin-bottom: 37px;
+  .input__group:first-child{
+      margin-bottom: 9px;
+  }
+}
+
+.input__group{
+  display: flex;
+  flex-direction: column;
+  label{
+      margin-bottom: 8px;
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #504F54;
+  }
+  input,
+  textarea{
+      width: 100%;
+      padding: 14px 12px;
+      border-radius: 4px;
+      background-color: $white;
+      border: 1px solid $borderColor;
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $titleColor;
+  }
+  textarea{
+      resize: none;
+  }
+  select{
+      padding: 14px 12px;
+      border-radius: 4px;
+      background-color: $white;
+      border: 1px solid $borderColor;
+      font-family: $manropeFont;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $textColor;
+  }  
+}
+
+.input__group__between{
+  display: flex;
+  justify-content: space-between;
+  .input__group{
+      flex-basis: 48%;
+  }
+
+  @include breakpoint(480px){
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+}
+
+.add-address-line{
+  font-family: $manropeFont;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: $themeColor;
+  transition: 0.3s;
+  &:hover,
+  &:focus{
+      color: $themeColor;
+  }
+}
+
+.multiple__address__body{
+  .multiple__address__step{
+      &:first-child{
+          margin-top: 10px;
+      }
+      &:not(:first-child){
+          margin-top: 40px;
+      }
+  }
+}
+
+.multiple__address__step{
+  p{
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $textColor;
+      margin-bottom: 5px;
+  }
+  h2{
+      font-family: $manropeFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $titleColor;
+      margin-bottom: 20px;
+  }
+  &__input{
+      padding: 14px;
+      width: 383px;
+      border: 3px solid $themeColor;
+      box-sizing: border-box;
+      border-radius: 8px;
+      input[type='file']{
+          display: none;
+      }
+      @include breakpoint(480px){
+          width: 100%;
+          padding: 10px;
+      }
+  }
+}
+
+.multiple__address__step__input label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .label-img{
+      img{
+          width: 24px;
+          height: 24px;
+      }
+  }
+  .label-text{
+      margin-left: 10px;
+      font-family: $manropeFont;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: $themeColor;
+      @include breakpoint(480px){
+          font-size: 14px;
+      }
+  }
+}
+
+.edit-backpart,
+.edit-frontpart{
+  border-radius: 16px;
+  background-image: url('/images/bg/bg-parts.png');
+  background-position: center;
+  background-size: cover;
+  padding: 29px 15px 21px 23px;
+  
+}
+
+.edit-frontpart{
+  margin: 18px 0 32px 0;
+  &__bottom{
+      margin-top: 67px;
+  }
+}
+
+.edit-frontpart__top{
+  margin-top: 63px;
+  input[type='file']{
+      display: none;
+  }
+  label{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .label-img{
+      margin-bottom: 14px;
+      width: 82px;
+      height: 82px;
+      background-color: rgba(85, 66, 246, 0.1);
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+          width: 36px;
+          height: 36px;
+      }
+  }
+  
+  .label-text{
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #5542F6;
+  }
+}
+
+.edit-backpart{
+  margin: 28px 0;
+  &__top{
+      input{
+          width: 100%;
+          margin-bottom: 31px;
+          padding: 8px 0;
+          border: 2px dashed #8F92A1;
+          background-color: transparent;
+          text-align: center;
+          font-family: $manropeFont;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 40px;
+          color: #808191;
+      }
+      p{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: $themeColor;
+      }
+  }
+  &__bottom{
+      margin-top: 120px;
+  }
+}
+
+@include breakpoint(767px){
+  .input__right{
+      margin-top: 30px;
+  }
+}

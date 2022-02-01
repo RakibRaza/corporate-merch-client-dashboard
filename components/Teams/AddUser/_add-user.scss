@@ -1,0 +1,77 @@
+.add-user__content{
+  border-top: 1px solid $borderColor;
+}
+.add-user__info{
+  padding-top: 30px;   
+  .input__group{
+      input{
+          font-weight: 500;
+      }
+      select{
+          color: $titleColor;
+      }
+  }
+  .input-group{
+      input{
+          padding: 14px 16px;
+          background: $white;
+          border: 1px solid $borderColor;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-family: $manropeFont;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: $textColor;
+      }
+      button{
+          border: 1px solid $borderColor;
+          font-family: $manropeFont;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: $titleColor;
+          background-color: $white;
+          &:hover{
+              background-color: $white;
+              color: $titleColor;
+              border-color: $borderColor;
+          }
+      }
+  }
+}
+
+.add-user__info{
+  .form-check .form-check-input {
+      &:checked{
+          background-color: $themeColor;
+          border-color: $themeColor;
+      }
+  }
+}
+
+.add-user__top{
+  margin-bottom: 20px;
+  h2{
+      font-family: $manropeFont;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: $titleColor;
+  }
+}
+
+.add-user__button{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  a{
+      width: 234px;
+  }
+  @include breakpoint(480px){
+      justify-content: center;
+      a{
+          width: 100%;
+      }
+  }
+}
